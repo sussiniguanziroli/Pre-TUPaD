@@ -9,12 +9,14 @@ package tp_1_p2;
  * @author paddy
  */
 public class TP_1_P2 {
-
-    /**
-     * @param args the command line arguments
-     */
+  
+   
     public static void main(String[] args) {
-        Ejercicio1.ejercicio1();
+         //Ejercicio3.DeclararVariables();
+         //Ejercicio4.UsarScanner();
+         //Ejercicio5.OperacionesMat();
+         //Ejercicio6.CaracteresEscape();
+         Ejercicio8.DivisionJava();
     }
 
 }
