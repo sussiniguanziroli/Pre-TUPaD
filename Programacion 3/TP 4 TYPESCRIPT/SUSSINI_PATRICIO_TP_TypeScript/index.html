@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUSSINI PATRICIO TP 4 TypeScript</title>
+</head>
+<body>
+    <script type="module">
+        const user = localStorage.getItem('userData');
+        if (user) {
+            const parsed = JSON.parse(user);
+            window.location.href = parsed.rol === 'admin' ? '/src/pages/admin/index.html' : '/src/pages/client/index.html';
+        } else {
+            window.location.href = '/src/pages/auth/registro/index.html';
+        }
+    </script>
+</body>
+</html>
