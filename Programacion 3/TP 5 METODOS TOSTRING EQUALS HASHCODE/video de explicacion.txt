@@ -1,0 +1,51 @@
+¿Cómo están? Mi nombre es Federico y en este caso les vengo a traer un complemento para que puedan comenzar a trabajar en el práctico de la unidad sin
+0:1010 secondscomo ven acá en pantalla tengo un gráfico UML, el cual nos va a acompañar en las próximas unidades. En este caso, el gráfico muestra diferentes clases
+0:1818 secondscomo puede ser usuario, pedido, detalle pedido, producto, categoría, base.
+0:2323 secondsTambién nos va a dar tres enum y una interfaz. En este en esta unidad es muy importante que le prestemos atención a
+0:3232 secondslo que van a ser las relaciones entre clases y a su vez que vamos a estar trabajando con la clase base que va a ser abstracta y mediante herencia va a
+0:4141 secondscompartir los tres atributos que posee, como es ID, eliminado y creado al resto de clases. ¿Sí? En este video yo les voy
+0:4949 secondsa estar mostrando en especial la relación que va a haber entre pedido y detalle pedido, que va a ser una relación unidireccional, va a ser una composición y va a ser de uno a muchos.
+1:011 minute, 1 second¿Sí? Entonces, ahora pasemos a lo que es el IDE.
+1:071 minute, 7 secondsBien, una vez en el ID, lo que les quería recordar primeramente es cómo crear un proyecto.
+1:131 minute, 13 secondsPara crear un proyecto, recuerden que tenemos que ir a My menú, donde están las cuatro rayitas. Ahí seleccionamos
+1:191 minute, 19 secondsnew project y acá nos va a salir esta pestaña. Sí, acá en el panel izquierdo tenemos que seleccionar Java. En nombre,
+1:281 minute, 28 secondsvamos a utilizar el nombre que nos propone eh la estructura del trabajo práctico. Luego, en la ocasión tenemos
+1:361 minute, 36 secondsque seleccionar la carpeta donde vamos a querer que se almacene nuestro proyecto.
+1:401 minute, 40 secondsEn este caso vamos a estar trabajando directamente con código Java, solamente no vamos a trabajar ni con May ni gradel.
+1:481 minute, 48 secondsY seleccionamos el JDK que vayamos a utilizar. De esta manera le daremos al botón create y ya estaremos inicializando nuestro proyecto.
+2:012 minutes, 1 secondBien, a continuación vamos a seguir con lo que es la creación de nuestra relación de composición entre pedido y detalle pedido. En este caso, yo me
+2:102 minutes, 10 secondsencuentro situado en la clase pedido, donde en primera instancia vamos a tener que recordar que tanto esta clase como el resto de ellas van a tener que
+2:172 minutes, 17 secondsextender de nuestra clase base. Luego de esto, vamos a definir los atributos propios de nuestra clase y seguido de
+2:262 minutes, 26 secondsesto vamos a tener que crear una colección. Esto lo vamos a tener que hacer ya que la relación entre pedido y detalle pedido es de uno a muchos. ¿Sí?
+2:362 minutes, 36 secondsEn este trabajo práctico se nos solicita que trabajemos con colecciones set, ya que estas no van a permitir duplicados dentro de ella.
+2:462 minutes, 46 secondsEs importante recordar que también deberemos sobrescribir nuestros métodos equals y has code para que las
+2:532 minutes, 53 secondscomparaciones entre elementos dentro de nuestras colecciones set se realicen de manera correcta. A continuación
+3:013 minutes, 1 secondtendremos que crear nuestros constructores. Vamos a tener nuestro constructor vacío y nuestro constructor que va a tener todos los parámetros. En
+3:093 minutes, 9 secondseste caso es muy importante recordar trabajar con el súper, ya que estamos trabajando con herencias. Sí, en esta ocasión no vamos a trabajar con ID, ya
+3:173 minutes, 17 secondsque en unidades posteriores lo vamos a generar de manera automática.
+3:223 minutes, 22 secondsSeguido esto, tendremos que sobrescribir nuestros métodos to string, nuestro método equals y nuestro método hashcode.
+3:303 minutes, 30 secondsLuego pasaremos a generar nuestros getter y setters y a continuación de estos vamos a tener que pasar a crear lo
+3:383 minutes, 38 secondsque son los métodos propios de nuestra clase. En este caso vamos a trabajar con el método add detalle pedido y el método
+3:453 minutes, 45 secondscalcular total. En el método calcular total, de manera resumida, vamos a tener una variable acumuladora y luego vamos
+3:523 minutes, 52 secondsiterar en nuestro set para obtener los subtotales e ir sumándolo. De esta manera una vez que sucede esto, lo vamos a asignar a nuestra variable total.
+4:034 minutes, 3 secondsLuego vamos a pasar a nuestro método ad detalle pedido donde se va a establecer la relación de composición. Sí, recordemos que en una composición va a
+4:124 minutes, 12 secondshaber una clase contenida y una clase contenedora. Sí. En este caso, pedido va a ser nuestra clase contenedora y
+4:194 minutes, 19 secondsdetalle pedido va a ser nuestra clase contenida. De esta manera vamos a tener que recibir por parámetro los elementos que nos van a ayudar a instanciar
+4:284 minutes, 28 secondsnuestra clase contenida. En este caso, detalle pedido va a ser nuestra clase contenida y como vemos hemos utilizado
+4:354 minutes, 35 secondslos elementos recibidos por parámetro para crearlo. Luego de esta, vamos a agregar este detalle pedido que hemos
+4:434 minutes, 43 secondsinstanciado a nuestro colección set. Y por último vamos a calcular el total para actualizarlo y que no haya errores.
+4:524 minutes, 52 secondsSeguido de esto, vamos a pasar a lo que es nuestro método main, donde voy a dar un pequeño ejemplo de cómo ir instanciando. ¿Sí?
+5:025 minutes, 2 secondsBien, una vez en nuestro método main, les voy a mostrar de manera muy rápida cómo instanciar esta relación de composición que hemos venido trabajando.
+5:105 minutes, 10 secondsPara este ejemplo vamos a crear dos productos siguiendo la estructura propuesta del trabajo práctico. Luego vamos a pasar a instanciar lo que va a
+5:185 minutes, 18 secondsser nuestra clase contenedora, que en este caso va a ser un pedido. Sí. A través de new vamos a instar la clase y le vamos a dar el nombre de pedido uno.
+5:285 minutes, 28 secondsSeguido de esto, tendremos que recordar que no vamos a poder instanciar un detalle de pedido en el método main, ya
+5:365 minutes, 36 secondsque el ciclo de vida de esta clase contenida va a depender totalmente del ciclo de vida de la clase contenedora que va a ser pedido. Entonces, acá lo
+5:445 minutes, 44 secondsque tendremos que hacer es mediante el método AD que habíamos creado anteriormente pasarle los argumentos necesarios para poder crear el detalle
+5:525 minutes, 52 secondspedido. En este caso pasamos dos argumentos diferentes porque vamos a crear dos detalles pedidos. Y por último
+5:595 minutes, 59 secondsvamos a mostrar la información de nuestro pedido. Sí, recordemos que es muy importante sobreescribir el método
+6:066 minutes, 6 secondsto string para que se pueda visualizar la información de manera correcta y nos nos muestre una referencia en memoria.
+6:156 minutes, 15 secondsAhora, cuando ejecutemos el programa, vamos a ver que vamos a tener la información de nuestro pedido, donde nuestro pedido va a tener su estado, su
+6:236 minutes, 23 secondstotal, su forma de pago y dentro va a contener los dos detalles donde uno va a tener un producto mouse y el otro va a
+6:306 minutes, 30 secondstener un producto lap. Así que bueno, esto ha sido todo en este video. Les deseo muchos éxitos en los próximos pasos. Muchas gracias. Okay.
+
+Sync to video time
