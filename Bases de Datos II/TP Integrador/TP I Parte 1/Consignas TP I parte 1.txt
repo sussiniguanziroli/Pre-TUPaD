@@ -1,0 +1,36 @@
+En esta primera etapa del Trabajo Práctico Integrador (TPI), deberán diseñar un modelo de datos NoSQL, justificar las decisiones técnicas tomadas e implementar la persistencia en un entorno Cloud utilizando MongoDB Atlas.
+
+📌 Modalidad general:
+
+Grupos de 2 integrantes.
+Dominio de negocio de libre elección.
+Evaluación mediante informe PDF y defensa oral (coloquio de la parte 1).
+🧠 Requisitos del modelo:
+
+Definir el problema de negocio y las colecciones.
+Diseñar al menos 3 colecciones relacionadas.
+Justificar técnicamente:
+Cuándo utilizaron Embedding.
+Cuándo utilizaron Linking.
+Implementar baja lógica. No se permite eliminar documentos físicamente.
+☁️ Infraestructura Cloud requerida:
+
+Creación de un Cluster M0/gratuito en MongoDB Atlas.
+Configuración de Database Access y Network Access.
+📤 El PDF de entrega deberá incluir al menos:
+
+📘
+Descripción
+Explicación del negocio elegido
+🧾
+Esquemas JSON
+Documentos en texto plano
+🖼️
+Capturas
+Atlas, usuarios y colecciones
+🔑
+Credenciales
+Connection String para corrección
+⚠️ Importante: No se aceptarán entregas incompletas ni modelos que incumplan la implementación de baja lógica.
+
+🚀 Se evaluará tanto el diseño técnico como la correcta implementación en la nube.
