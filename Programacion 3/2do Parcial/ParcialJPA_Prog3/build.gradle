@@ -1,0 +1,36 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:6.0.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+
+    compileOnly 'org.projectlombok:lombok:1.18.42'
+    annotationProcessor 'org.projectlombok:lombok:1.18.42'
+
+    testCompileOnly 'org.projectlombok:lombok:1.18.42'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.42'
+
+
+    implementation 'com.h2database:h2:2.4.240'
+    implementation 'org.hibernate.orm:hibernate-core:6.4.4.Final'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+application {
+    mainClass = 'com.tp.jpa.Main'
+    applicationDefaultJvmArgs = ['-Djava.util.logging.config.file=src/main/resources/logging.properties']
+}
