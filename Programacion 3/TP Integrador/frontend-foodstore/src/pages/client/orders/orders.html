@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="dark" />
+  <title>Food Store — Mis Pedidos</title>
+  <link rel="stylesheet" href="../../../css/main.css">
+</head>
+<body>
+  <div id="header"></div>
+  <main>
+    <div class="catalog-title">
+      <h1>Mis Pedidos</h1>
+      <select id="filter-estado">
+        <option value="">Todos</option>
+        <option value="PENDIENTE">Pendiente</option>
+        <option value="CONFIRMADO">Confirmado</option>
+        <option value="TERMINADO">Terminado</option>
+        <option value="CANCELADO">Cancelado</option>
+      </select>
+    </div>
+    <div id="orders-list"></div>
+  </main>
+  <div id="modal-root"></div>
+  <script type="module" src="./orders.ts"></script>
+</body>
+</html>

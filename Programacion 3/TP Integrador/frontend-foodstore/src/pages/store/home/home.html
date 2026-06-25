@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="dark" />
+  <title>Food Store — Catálogo</title>
+  <link rel="stylesheet" href="../../../css/main.css">
+</head>
+<body>
+  <div id="header"></div>
+  <main>
+    <div class="category-bar" id="category-bar"></div>
+    <div class="catalog-toolbar">
+      <input id="search-input" type="text" placeholder="Buscar productos..." />
+      <select id="sort-select">
+        <option value="">Ordenar por</option>
+        <option value="nombre-asc">Nombre A-Z</option>
+        <option value="nombre-desc">Nombre Z-A</option>
+        <option value="precio-asc">Precio ascendente</option>
+        <option value="precio-desc">Precio descendente</option>
+      </select>
+    </div>
+    <div class="catalog-title">
+      <h2 id="catalog-heading">Todos los Productos</h2>
+      <span id="catalog-count"></span>
+    </div>
+    <div id="product-container"></div>
+  </main>
+  <script type="module" src="./home.ts"></script>
+</body>
+</html>
