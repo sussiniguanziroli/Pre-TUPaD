@@ -35,6 +35,8 @@
   --radius-md: 14px;
   --radius-lg: 18px;
   --radius-xl: 22px;
+  --page-max: 1180px;
+  --gutter: 40px;
 }
 
 html, body {
@@ -85,8 +87,9 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 16px 28px;
-  margin: 20px 20px 0;
+  padding: 13px 20px 13px 22px;
+  margin: 22px auto 0;
+  width: min(100% - var(--gutter), var(--page-max));
   background: var(--glass-bg);
   backdrop-filter: var(--glass-blur);
   -webkit-backdrop-filter: var(--glass-blur);
@@ -98,10 +101,11 @@ header {
 }
 
 header h1, .brand {
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 600;
   color: var(--text-primary);
   letter-spacing: -0.3px;
+  padding: 0;
 }
 
 .topnav {
@@ -115,22 +119,25 @@ header a, .topnav a {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  padding: 9px 18px;
-  background: var(--accent-bg);
-  border: 1px solid var(--accent-border);
+  padding: 8px 14px;
+  background: transparent;
+  border: 1px solid transparent;
   border-radius: 50px;
-  color: var(--accent);
+  color: var(--text-secondary);
   font-size: 13px;
   font-weight: 500;
   text-decoration: none;
-  transition: all 0.2s ease;
+  transition: all 0.18s ease;
 }
 
 header a:hover, .topnav a:hover {
-  background: rgba(99, 179, 237, 0.25);
-  border-color: rgba(99, 179, 237, 0.45);
-  box-shadow: 0 0 16px rgba(99, 179, 237, 0.15);
+  background: rgba(255, 255, 255, 0.07);
+  border-color: rgba(255, 255, 255, 0.1);
+  color: var(--text-primary);
 }
+
+/* La marca es un <a> dentro del header pero no debe verse como ítem de nav. */
+.brand:hover { background: transparent; border-color: transparent; }
 
 .cart-badge {
   background: var(--accent);
@@ -150,11 +157,19 @@ header a:hover, .topnav a:hover {
 main {
   display: flex;
   flex-direction: column;
-  gap: 14px;
-  padding: 16px 20px 40px;
+  gap: 16px;
+  width: min(100% - var(--gutter), var(--page-max));
+  margin-inline: auto;
+  padding: 20px 0 48px;
 }
 
-.page-container { max-width: 1100px; width: 100%; margin: 0 auto; padding: 16px 20px 40px; }
+main h1 {
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: -0.2px;
+}
+
+.page-container { max-width: var(--page-max); width: 100%; margin: 0 auto; }
 
 /* ── Botones ─────────────────────────────────────────────── */
 
@@ -249,15 +264,15 @@ input:focus, select:focus, textarea:focus {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.15);
 }
 
-.glass-card { overflow: hidden; transition: all 0.25s ease; cursor: pointer; }
+.glass-card { overflow: hidden; transition: all 0.25s ease; cursor: pointer; display: flex; flex-direction: column; }
 .glass-card:hover { background: rgba(255, 255, 255, 0.09); border-color: rgba(255, 255, 255, 0.2); transform: translateY(-3px); box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.2); }
-.glass-card img { width: 100%; height: 140px; object-fit: cover; display: block; background: rgba(255,255,255,0.04); }
+.glass-card img { width: 100%; aspect-ratio: 4 / 3; height: auto; object-fit: cover; display: block; background: rgba(255,255,255,0.04); }
 
-.card-body { padding: 14px; display: flex; flex-direction: column; gap: 4px; }
-.card-body h3 { font-size: 13px; font-weight: 500; color: var(--text-primary); line-height: 1.3; }
-.card-body .desc { font-size: 11.5px; color: var(--text-secondary); }
-.card-body .price-row { display: flex; align-items: center; justify-content: space-between; margin: 4px 0 8px; }
-.card-body p.price { font-size: 16px; font-weight: 600; color: var(--accent); }
+.card-body { padding: 14px 15px 15px; display: flex; flex-direction: column; gap: 5px; flex: 1; }
+.card-body h3 { font-size: 13.5px; font-weight: 600; color: var(--text-primary); line-height: 1.3; }
+.card-body .desc { font-size: 11.5px; color: var(--text-secondary); line-height: 1.45; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.card-body .price-row { display: flex; align-items: center; justify-content: space-between; margin: auto 0 10px; padding-top: 4px; }
+.card-body p.price { font-size: 16px; font-weight: 700; color: var(--accent); letter-spacing: -0.3px; }
 
 .btn-add { width: 100%; padding: 9px; background: var(--accent-bg); border: 1px solid var(--accent-border); border-radius: var(--radius-sm); color: var(--accent); font-size: 12px; font-weight: 500; cursor: pointer; font-family: 'Inter', sans-serif; transition: all 0.15s ease; }
 .btn-add:hover { background: rgba(99, 179, 237, 0.25); border-color: rgba(99, 179, 237, 0.45); box-shadow: 0 0 12px rgba(99, 179, 237, 0.15); }
@@ -321,14 +336,14 @@ input:focus, select:focus, textarea:focus {
 .catalog-toolbar #search-input { flex: 1; min-width: 200px; }
 .catalog-toolbar select { width: auto; min-width: 160px; }
 
-.catalog-title { display: flex; align-items: baseline; justify-content: space-between; }
-.catalog-title h2 { font-size: 18px; font-weight: 600; }
+.catalog-title { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+.catalog-title h1, .catalog-title h2 { font-size: 18px; font-weight: 600; letter-spacing: -0.2px; }
 .catalog-title span { font-size: 12px; color: var(--text-muted); }
 
 #product-container, .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  gap: 14px;
+  grid-template-columns: repeat(auto-fill, minmax(212px, 1fr));
+  gap: 18px;
 }
 
 .tag-pill {
@@ -374,7 +389,7 @@ input:focus, select:focus, textarea:focus {
 
 /* ── Carrito ──────────────────────────────────────────────── */
 
-.cart-layout { display: grid; grid-template-columns: 1fr 300px; gap: 20px; max-width: 980px; margin: 0 auto; width: 100%; align-items: start; }
+.cart-layout { display: grid; grid-template-columns: 1fr 320px; gap: 22px; width: 100%; align-items: start; }
 @media (max-width: 760px) { .cart-layout { grid-template-columns: 1fr; } }
 
 #cart-container { display: flex; flex-direction: column; gap: 10px; }
@@ -456,7 +471,7 @@ input:focus, select:focus, textarea:focus {
 
 /* ── Admin ───────────────────────────────────────────────── */
 
-.admin-shell { display: grid; grid-template-columns: 210px 1fr; gap: 18px; max-width: 1180px; margin: 0 auto; width: 100%; align-items: start; }
+.admin-shell { display: grid; grid-template-columns: 208px 1fr; gap: 20px; width: min(100% - var(--gutter), var(--page-max)); margin: 16px auto 48px; align-items: start; }
 @media (max-width: 760px) { .admin-shell { grid-template-columns: 1fr; } }
 
 .sidebar { padding: 16px 12px; display: flex; flex-direction: column; gap: 3px; }

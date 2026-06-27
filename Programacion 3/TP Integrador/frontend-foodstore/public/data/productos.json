@@ -5,7 +5,7 @@
     "precio": 4500,
     "descripcion": "Carne 150g, lechuga, tomate, cebolla morada y mayonesa",
     "stock": 50,
-    "imagen": "https://foodish-api.com/images/burger/burger1.jpg",
+    "imagen": "https://images.unsplash.com/photo-1757834787931-ddd70f3379a5?fm=jpg&q=60&w=800&fit=crop",
     "disponible": true,
     "eliminado": false,
     "categoriaId": 1
@@ -16,7 +16,7 @@
     "precio": 6200,
     "descripcion": "Doble carne 150g c/u, cheddar, panceta y salsa barbacoa",
     "stock": 40,
-    "imagen": "https://foodish-api.com/images/burger/burger2.jpg",
+    "imagen": "https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?fm=jpg&q=60&w=800&fit=crop",
     "disponible": true,
     "eliminado": false,
     "categoriaId": 1
@@ -27,7 +27,7 @@
     "precio": 5500,
     "descripcion": "Carne 150g, huevo, jamón, queso, lechuga y tomate",
     "stock": 30,
-    "imagen": "https://foodish-api.com/images/burger/burger3.jpg",
+    "imagen": "https://img-global.cpcdn.com/recipes/98cf400a163886d2/680x781cq80/hamburguesa-completa-foto-principal.jpg",
     "disponible": true,
     "eliminado": false,
     "categoriaId": 1
@@ -49,7 +49,7 @@
     "precio": 3800,
     "descripcion": "Mozzarella, salsa de tomate y orégano",
     "stock": 25,
-    "imagen": "https://foodish-api.com/images/pizza/pizza1.jpg",
+    "imagen": "https://saborargento.com.ar/wp-content/uploads/2023/09/Receta-de-Pizza-Muzzarella.jpg",
     "disponible": true,
     "eliminado": false,
     "categoriaId": 2
@@ -60,7 +60,7 @@
     "precio": 4500,
     "descripcion": "Mozzarella, rodajas de tomate, ajo, aceitunas y albahaca",
     "stock": 25,
-    "imagen": "https://foodish-api.com/images/pizza/pizza2.jpg",
+    "imagen": "https://www.johaprato.com/files/styles/flexslider_full/public/pizza-napolitana.jpg",
     "disponible": true,
     "eliminado": false,
     "categoriaId": 2
@@ -71,7 +71,7 @@
     "precio": 4800,
     "descripcion": "Mozzarella, cebolla caramelizada, jamón y aceitunas",
     "stock": 20,
-    "imagen": "https://foodish-api.com/images/pizza/pizza3.jpg",
+    "imagen": "https://saborargento.com.ar/wp-content/uploads/2023/05/Receta-de-Pizza-Fugazzeta.jpg",
     "disponible": true,
     "eliminado": false,
     "categoriaId": 2
@@ -82,7 +82,7 @@
     "precio": 5200,
     "descripcion": "Mozzarella, pepperoni, morrón, cebolla, huevo y aceitunas",
     "stock": 15,
-    "imagen": "https://foodish-api.com/images/pizza/pizza4.jpg",
+    "imagen": "https://locosxlaparrilla.com/wp-content/uploads/2015/02/Receta-recetas-locos-x-la-parrilla-locosxlaparrilla-receta-pizza-receta-pizza-huevo-morron-aceitunas-pizza-huevo-morron-aceitunas-848x477.jpg",
     "disponible": true,
     "eliminado": false,
     "categoriaId": 2
@@ -159,7 +159,7 @@
     "precio": 1000,
     "descripcion": "Agua mineral sin gas 500ml",
     "stock": 300,
-    "imagen": "https://dispandistribuidora.agilecdn.com.br/8211_1.jpg?v=338-3114143016",
+    "imagen": "https://jumboargentina.vtexassets.com/arquivos/ids/795828-800-auto?v=638313501973800000&width=800&height=auto&aspect=true",
     "disponible": true,
     "eliminado": false,
     "categoriaId": 4
@@ -170,7 +170,7 @@
     "precio": 2500,
     "descripcion": "Cerveza artesanal rubia 473ml",
     "stock": 100,
-    "imagen": "https://imgs.search.brave.com/SpDJCdalR7edohOLzhzqCCD0Qbaz5l-BC07in3yPWXY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9pZGVu/dGlmaWNhY2klQzMl/QjNuLW9zY3VyYS1k/ZS1sYS1jZXJ2ZXph/LWRlbC1hcnRlLWVs/LXZpZHJpby00NDA1/MzcyMC5qcGc",
+    "imagen": "https://images.pexels.com/photos/27623973/pexels-photo-27623973.jpeg",
     "disponible": true,
     "eliminado": false,
     "categoriaId": 4
@@ -181,7 +181,7 @@
     "precio": 2500,
     "descripcion": "Papas fritas bastón crocantes con sal parrillera",
     "stock": 70,
-    "imagen": "https://imgs.search.brave.com/in2PgvEBAwflH6lKfKgmkhjM5zsAZt_5CCF9WkXKB1Y/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAzLzc0LzE4LzIw/LzM2MF9GXzM3NDE4/MjA3N19oS3ZLS2pL/YW5JZkFacW4wSzhV/WUE3M2FIejZGTXo5/dC5qcGc",
+    "imagen": "https://images.pexels.com/photos/4109234/pexels-photo-4109234.jpeg",
     "disponible": true,
     "eliminado": false,
     "categoriaId": 5
